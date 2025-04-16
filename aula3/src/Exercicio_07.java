@@ -32,7 +32,12 @@ public class Exercicio_07 {
                 System.out.printf("\n %.2f * %.2f = %.2f",numero_1, numero_2, (numero_1 * numero_2));
                 break;
             case 4 :
-                System.out.printf("\n %.2f / %.2f = %.2f",numero_1, numero_2, (numero_1 / numero_2));
+
+                if (numero_2 != 0) {
+                    System.out.printf("\n %.2f / %.2f = %.2f",numero_1, numero_2, (numero_1 / numero_2));
+                } else {
+                    System.out.printf("O divisor não pode ser 0");
+                }
                 break;
             default:
                 System.out.println("Operação Inválida!");
