@@ -7,23 +7,20 @@ public class Exercicio_2 {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
+        int numerosPares = 0, numerosImpares = 0;
 
-        System.out.println("Digite o primeiro número");
-        int numero_1 = entrada.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Digite um número!");
+            int numero = entrada.nextInt();
 
-        System.out.println("Digite o segundo número");
-        int numero_2 = entrada.nextInt();
-
-        if (numero_1 < numero_2) {
-            for (int i = numero_1; i < numero_2; i++) {
-                if (i % 3 == 0 && i % 5 == 0 ) {
-                    System.out.printf("\n %d é muliplo de 3 e 5", i);
-                }
+            if (numero % 2 == 0) {
+                numerosPares++;
+            } else {
+                numerosImpares++;
             }
-        } else {
-            System.out.println("Intervalo é inválido");
         }
-
+        System.out.println("Total de números pares: " + numerosPares);
+        System.out.println("Total de números imppares: " + numerosImpares);
 
         entrada.close();
     }

@@ -8,9 +8,9 @@ public class Pesquisa {
         System.out.printf("Digite um número!");
         int numero = entrada.nextInt();
 
-        do {
+        while (contador <= 10);{
             System.out.printf("\n %d x %d = %d ", numero, contador, (numero * contador));
             contador++;
-        }while (contador <= 10);
+        }
     }
 }
