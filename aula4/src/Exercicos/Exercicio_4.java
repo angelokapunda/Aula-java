@@ -7,9 +7,15 @@ public class Exercicio_4 {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
-        int idade, identidade, areaDeAtuacao, pessoasBackEnd = 0,
-                pessoasFrontEnd = 0, pessoasMobileMaior40, pessoaFullStackMenor30,
-                numeroTotalPessoas;
+        int idade,
+            areaDeAtuacao,
+            pessoasBackEnd = 0,
+            pessoasFrontEnd = 0,
+            pessoasMobileMaior40 = 0,
+            pessoaFullStackMenor30 = 0,
+            numeroTotalPessoas = 0,
+            somaIdades = 0;
+
         double media;
         String continuarLeituraDados = "S";
 
@@ -29,7 +35,7 @@ public class Exercicio_4 {
                 6 – Outros
                 ************************************************************************
                 """);
-            identidade = entrada.nextInt();
+            entrada.nextInt();
 
             System.out.println("""
                 Pessoa Desenvolvedora/Área de atuação? (digite o código de 1 à 4)
@@ -46,15 +52,27 @@ public class Exercicio_4 {
             entrada.skip("\\R");
             continuarLeituraDados = entrada.nextLine();
 
+            if (areaDeAtuacao == 1) {
+                pessoasBackEnd++;
+            } else if (areaDeAtuacao == 2) {
+                pessoasFrontEnd++;
+            } else if (areaDeAtuacao == 3 && idade > 40) {
+                pessoasMobileMaior40++;
+            } else if (areaDeAtuacao == 4 && idade < 30) {
+                pessoaFullStackMenor30++;
+            }
+            somaIdades += idade;
+            numeroTotalPessoas++;
 
         }
+        media = (double) somaIdades / numeroTotalPessoas;
 
 
-        System.out.println("Total de pessoas desenvolvedoras Backend: " );
-        System.out.println("Total de Mulheres Cis e Trans desenvolvedoras Frontend: " );
-        System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: " );
-        System.out.println("Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos:");
-        System.out.println("O número total de pessoas que responderam à pesquisa: " );
-        System.out.println("A média de idade das pessoas que responderam à pesquisa: " );
+        System.out.println("Total de pessoas desenvolvedoras Backend: " + pessoasBackEnd);
+        System.out.println("Total de Mulheres Cis e Trans desenvolvedoras Frontend: " + pessoasFrontEnd);
+        System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: " + pessoasMobileMaior40);
+        System.out.println("Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos: " + pessoaFullStackMenor30);
+        System.out.println("O número total de pessoas que responderam à pesquisa: " + numeroTotalPessoas);
+        System.out.println("A média de idade das pessoas que responderam à pesquisa: " + media);
     }
 }
