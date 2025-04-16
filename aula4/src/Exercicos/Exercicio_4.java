@@ -45,7 +45,7 @@ public class Exercicio_4 {
             System.out.println("Deseja continuar a leitura dos dados de um novo colaborador ou não? (S/N)");
             entrada.skip("\\R");
             continuarLeituraDados = entrada.nextLine();
-            
+
 
         }
 
