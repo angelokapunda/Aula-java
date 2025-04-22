@@ -25,6 +25,10 @@ O objetivo é consolidar os conhecimentos adquiridos ao longo das aulas, utiliza
 ### ✔️ Aula 05 – Vetores e Matriz
 📂 [Acessar exercícios](https://github.com/angelokapunda/Aula-java/tree/main/aula5/src) 📝 Vetores e Matriz.
 
+### ✔️ Aula 06 – Collections
+📂 [Acessar exercícios](https://github.com/angelokapunda/Aula-java/tree/main/aula6/src) 📝 ArrayList, Set, Map.
+
+
 ## 3. Requisitos
 Para executar os códigos localmente, você precisará de:
 
