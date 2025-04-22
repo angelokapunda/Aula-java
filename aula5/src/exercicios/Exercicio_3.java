@@ -33,7 +33,5 @@ public class Exercicio_3 {
         System.out.println("Soma dos Elementos da Diagonal Principal: " + somaPrincipal);
         System.out.println("Soma dos Elementos da Diagonal Secundária: " + somaSecundaria);
 
-
-
     }
 }
