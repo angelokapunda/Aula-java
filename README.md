@@ -28,6 +28,9 @@ O objetivo é consolidar os conhecimentos adquiridos ao longo das aulas, utiliza
 ### ✔️ Aula 06 – Collections
 📂 [Acessar exercícios](https://github.com/angelokapunda/Aula-java/tree/main/aula6/src) 📝 ArrayList, Set, Map.
 
+### ✔️ Aula 07 – Collections
+📂 [Acessar exercícios](https://github.com/angelokapunda/Aula-java/tree/main/aula7/src) 📝 Pilhas e Filas.
+
 
 ## 3. Requisitos
 Para executar os códigos localmente, você precisará de:
