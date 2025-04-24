@@ -31,6 +31,9 @@ O objetivo é consolidar os conhecimentos adquiridos ao longo das aulas, utiliza
 ### ✔️ Aula 07 – Collections
 📂 [Acessar exercícios](https://github.com/angelokapunda/Aula-java/tree/main/aula7/src) 📝 Pilhas e Filas.
 
+### ✔️ Aula 08 – Métodos
+📂 [Acessar exercícios](https://github.com/angelokapunda/Aula-java/tree/main/aula8/src) 📝 Métodos com retorno e argumentos / Meétodos sem retorno e sem argumentos
+
 
 ## 3. Requisitos
 Para executar os códigos localmente, você precisará de:
